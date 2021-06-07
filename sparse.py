@@ -52,7 +52,7 @@ def pytorch_l(X, y):
     def mish(x):
         return x * torch.tanh(F.softplus(x))
 
-    # モデル本体の定義 4層
+    # モデル本体の定義 3層
     # input➡500➡10➡output
     class LinearRegression(nn.Module):
         def __init__(self, input_size, output_size):
